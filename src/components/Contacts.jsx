@@ -25,7 +25,7 @@ const Contacts = () => {
           For any queries, reach out to our event coordinators
         </p>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))]  gap-4 md:gap-6">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))]  gap-4 ">
         {contacts.map((c, idx) => (
           <div
             key={idx}
@@ -60,7 +60,7 @@ const Contacts = () => {
                 </a>
                 <button
                   onClick={() => copyPhoneNumber(c.phone, idx)}
-                  className="p-1 rounded-full hover:bg-[#F8DFBE] transition-colors "
+                  className="p-1 rounded-full hover:bg-[#c0c0c0] transition-colors "
                   title="Copy phone number"
                 >
                   {copiedIndex === idx ? (

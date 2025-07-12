@@ -7,7 +7,7 @@ import Location from "../components/Location";
 import "./styles.css"; // Create this file for styling
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts";
-import heroImg from "../assets/Charaka (2).png";
+import heroImg from "../assets/Charaka.png";
 import EventDetails from "../components/EventDetails";
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
               D.K. Jilla Padmashali Mahasabha&reg; Mangaluru
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-[#2A2A2A]  mb-3">
-              Padmashali Annual Sports Meet
+              33<sup>rd</sup> Padmashali Annual Sports Meet
             </h1>
             {/* <p className="text-[16px] md:text-[20px] text-[#5A5A5A] mb-2">
               Hosted by Sri Brahmalinga Veerabhadra Durgaparameshwari temple,

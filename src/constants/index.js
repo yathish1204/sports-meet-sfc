@@ -1,6 +1,6 @@
 import temple from "../assets/temple.png";
 import participants from "../assets/participants.png";
-import torch from "../assets/torch.png";
+import torch from "../assets/events.png";
 import winner from "../assets/winner.png";
 
 export const rules = [
@@ -58,20 +58,24 @@ export const eventHighlights = [
     count: "16",
     title: "Temples",
     image: temple,
+    ifPlus: "",
   },
   {
     count: "70",
     title: "Events",
     image: torch,
+    ifPlus: "+",
   },
   {
     count: "1000",
     title: "Participants",
     image: participants,
+    ifPlus: "+",
   },
   {
     count: "200",
     title: "Winners",
     image: winner,
+    ifPlus: "+",
   },
 ];
