@@ -2,6 +2,25 @@ import temple from "../assets/temple.png";
 import participants from "../assets/participants.png";
 import torch from "../assets/events.png";
 import winner from "../assets/winner.png";
+import dateIcon from "../assets/Date.svg";
+import locationIcon from "../assets/location.svg";
+import heroImg from "../assets/Charaka.png";
+import callIcon from "../assets/call.svg";
+import SFC_logo from "../assets/sfc_logo.png";
+import brandLogo from "../assets/brand-logo.png";
+import pageNotFound from "../assets/404.png";
+import carVideo from "../assets/output.mp4";
+
+export const images = {
+  dateIcon,
+  locationIcon,
+  heroImg,
+  callIcon,
+  SFC_logo,
+  brandLogo,
+  pageNotFound,
+  carVideo,
+};
 
 export const rules = [
   "ಎಲ್ಲಾ ಸ್ಪರ್ಧೆಗಳಲ್ಲಿ 16 ದೇವಸ್ಥಾನಗಳ (ಪದ್ಮಶಾಲಿ) ಸದಸ್ಯರು ಮಾತ್ರ ಭಾಗವಹಿಸಲು ಅವಕಾಶ",

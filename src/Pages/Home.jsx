@@ -7,8 +7,9 @@ import Location from "../components/Location";
 import "./styles.css"; // Create this file for styling
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts";
-import heroImg from "../assets/Charaka.png";
 import EventDetails from "../components/EventDetails";
+import { images } from "../constants";
+import Video from "../components/Video";
 
 const Home = () => {
   return (
@@ -20,15 +21,16 @@ const Home = () => {
           {/* Left Side - Charaka Image */}
           <div className="flex-1 flex justify-center md:justify-start mb-8 md:mb-0">
             <img
-              src={heroImg}
+              src={images.heroImg}
               alt="Charaka"
               className="max-w-xs md:max-w-md lg:max-w-lg h-auto drop-shadow-2xl"
             />
+            {/* <Video /> */}
           </div>
 
           {/* Right Side - Content */}
           <div className="flex-1 flex flex-col items-start md:items-start  md:text-left mb-6">
-            <p className="text-xl md:text-2xl font-semibold text-[#5A5A5A] mb-2">
+            <p className="text-2xl md:text-4xl font-semibold text-[#5A5A5A] mb-2">
               D.K. Jilla Padmashali Mahasabha&reg; Mangaluru
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-[#2A2A2A]  mb-3">
@@ -42,13 +44,13 @@ const Home = () => {
             <div className="flex flex-row sm:flex-row gap-2 sm:gap-4 mt-4 w-full">
               <a
                 href="/login"
-                className="flex-1 sm:flex-initial px-8 py-3 rounded-lg text-center text-[#D35D38] border-[1.5px] border-[#D35D38] font-medium text-md  hover:bg-[#e0e0e0]  transition"
+                className="flex-1 sm:flex-initial px-8 py-3 rounded-lg text-center text-accent border-[1.5px] border-[#D35D38] font-medium text-md  hover:bg-[#e0e0e0]  transition"
               >
                 Login
               </a>
               <a
                 href="/register"
-                className="flex-1 sm:flex-initial px-8 py-3 rounded-lg text-center bg-[#D35D38] text-white font-medium text-md shadow-lg hover:bg-[#B84A2E] transition"
+                className="flex-1 sm:flex-initial px-8 py-3 rounded-lg text-center bg-accent text-white font-medium text-md shadow-lg hover:bg-[#B84A2E] transition"
               >
                 Register
               </a>

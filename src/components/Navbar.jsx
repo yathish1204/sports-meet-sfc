@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import ProfileDropdown from "./ProfileDropdown";
-import brandLogo from "../assets/brand-logo.png";
+import { images } from "../constants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="pl-4 md:pl-0">
               <Link to="/">
                 <img
-                  src={brandLogo}
+                  src={images.brandLogo}
                   className=" drop-shadow-[0px_0px_20px_white] filter w-18 md:w-22  "
                   alt="logo"
                 />

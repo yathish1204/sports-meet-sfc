@@ -1,6 +1,6 @@
 import React from "react";
 import InstagramButton from "./InstagramButton";
-import SFC_logo from "../assets/sfc_logo.png";
+import { images } from "../constants";
 
 const FooterNew = () => {
   return (
@@ -8,7 +8,7 @@ const FooterNew = () => {
       {/* <div className="flex flex-col md:flex-row items-center  justify-between w-[90%] mx-auto py-4 md:p-6 gap-4 md:gap-0"> */}
       <div className="flex  items-center justify-between md:gap-2  items-center  py-4 ">
         <div className="flex flex-row items-center gap-2 text-sm text-start md:text-base">
-          <img src={SFC_logo} alt="logo" width={40} />
+          <img src={images.SFC_logo} alt="logo" width={40} />
           <div
             className="flex flex-col"
             onClick={`https://www.instagram.com/friends_club_salikeri/`}

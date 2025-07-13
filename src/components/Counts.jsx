@@ -10,10 +10,10 @@ const Counts = () => {
   return (
     <div className="w-[90%]  mx-auto mb-8  px-0 md:w-[90%] lg:px-4">
       <div className="text-center mb-6">
-        <h1 className="text-2xl text-left md:text-center md:text-4xl font-bold text-[#2A2A2A] mb-2 ">
+        <h1 className="text-2xl text-left md:text-center md:text-4xl font-bold text-primary mb-2 ">
           Event Highlights
         </h1>
-        <p className="text-base text-left md:text-center md:text-lg text-[#5A5A5A]">
+        <p className="text-base text-left md:text-center md:text-lg text-secondary">
           Explore the highlights of the event
         </p>
       </div>
@@ -23,7 +23,8 @@ const Counts = () => {
         {/* With map */}
         {eventHighlights.map((event, index) => (
           <button
-            className="relative flex flex-col bg-[#EAE2D5] text-[#2A2A2A] rounded-xl md:rounded-2xl  hover:bg-[#ded5c5] overflow-hidden h-32 sm:h-40 md:h-48 lg:h-52"
+            key={index}
+            className="relative flex flex-col bg-[#EAE2D5] text-primary rounded-xl md:rounded-2xl  hover:bg-[#ded5c5] overflow-hidden h-32 sm:h-40 md:h-48 lg:h-52"
             onClick={() => clickCTA("16 temples")}
           >
             {/* Text at top left */}
@@ -32,7 +33,7 @@ const Counts = () => {
                 {event.count}
                 <sup className="font-normal">{event.ifPlus}</sup>
               </span>
-              <span className="text-[#5A5A5A] text-sm sm:text-base md:text-lg lg:text-xl tracking-wide">
+              <span className="text-secondary text-sm sm:text-base md:text-lg lg:text-xl tracking-wide">
                 {event.title}
               </span>
             </div>

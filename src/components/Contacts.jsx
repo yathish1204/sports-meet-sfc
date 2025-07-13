@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import callIcon from "../assets/call.svg";
-import { contacts } from "../constants";
+import { contacts, images } from "../constants";
 
 const Contacts = () => {
   const [copiedIndex, setCopiedIndex] = useState(null);
@@ -29,7 +28,7 @@ const Contacts = () => {
         {contacts.map((c, idx) => (
           <div
             key={idx}
-            className="flex  items-center gap-3 bg-[#E0E0E0] rounded-xl  px-6 py-2  hover:bg-[#d5d5d5] transition"
+            className="flex  items-center gap-3 bg-[#E0E0E0] rounded-xl  px-6 py-2  hover:bg-[#d5d5d5]  transition"
           >
             {/* <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F8DFBE] mb-3">
               <svg
@@ -46,7 +45,7 @@ const Contacts = () => {
                 />
               </svg>
             </span> */}
-            <img src={callIcon} alt="Call" />
+            <img src={images.callIcon} alt="Call" />
             <div className="flex flex-col gap-1">
               <h3 className="text-md font-semibold text-[#2A2A2A] ">
                 {c.name}
